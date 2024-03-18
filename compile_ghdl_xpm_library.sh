@@ -1,7 +1,7 @@
 #!/bin/bash
-export XPM_TOP_DIR=$( dirname "${BASH_SOURCE[0]}" )/..
+export XPM_TOP_DIR=$( dirname "${BASH_SOURCE[0]}" )
 echo $XPM_TOP_DIR
-export XPM_LIB_WORK_DIR=$( dirname `which vivado` )/../data/vhdl/ghdl/xilinx-vivado/xpm/v08
+export XPM_LIB_WORK_DIR=xpm
 echo $XPM_LIB_WORK_DIR
 
 mkdir -p $XPM_LIB_WORK_DIR
