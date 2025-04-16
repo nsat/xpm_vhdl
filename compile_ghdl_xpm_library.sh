@@ -2,7 +2,7 @@
 pushd $(dirname $0)
 export XPM_LIB_WORK_DIR=xpm
 mkdir -p $XPM_LIB_WORK_DIR
-echo "Compiling xpm library (directory is ${XPM_LIB_WORK_DIR})"
+echo "Compiling xpm library to $(dirname $0)/$XPM_LIB_WORK_DIR"
 ghdl -a --work=xpm --workdir=${XPM_LIB_WORK_DIR} --std=08 src/xpm/xpm_VCOMP.vhd
 ghdl -a --work=xpm --workdir=${XPM_LIB_WORK_DIR} --std=08 src/xpm/xpm_cdc/hdl/xpm_cdc_single.vhd
 ghdl -a --work=xpm --workdir=${XPM_LIB_WORK_DIR} --std=08 src/xpm/xpm_cdc/hdl/xpm_cdc_array_single.vhd
